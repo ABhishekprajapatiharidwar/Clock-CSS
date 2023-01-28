@@ -1,0 +1,135 @@
+body{
+    display: flex;
+    
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    
+    background-image: linear-gradient(to right,
+    #833ab4,#fd1d1d,#fcb045);
+    background-size: contain;
+    background-position: center;
+
+}
+
+#con{
+    height: 550px;
+    width: 550px;
+  background-image: url(clo.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+    border-radius: 100%;
+    
+    display: flex;
+    justify-content: center;
+    box-shadow: 15px 10px 100px 12px yellow;
+    border: 1px solid yellow;
+    
+}
+
+@media only screen and (max-width: 768px) {
+    #con{
+       transform: scale(0.8);
+    }
+    
+}
+
+@media only screen and (max-width: 546px) {
+    #con{
+       transform: scale(0.5);
+    }
+    
+}
+
+#sec{
+    height: 260px;
+    width: 2px;
+    background-color:black;
+    /* position: absolute;
+    top:20px;
+    margin-left: 140px; */
+    margin-top: 20px;
+    margin-left: 15px;
+    animation-name: secmy;
+    animation-duration: 60s;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transition: all;
+    animation-iteration-count: infinite;
+    border-radius: 8px;
+   
+    
+    
+}
+
+
+@keyframes secmy {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
+
+
+
+#min{
+    height: 240px;
+    width: 6px;
+    background-color: black;
+     position: relative;
+     top: 38px;
+     right: 3px;
+   
+    animation-name: min1;
+    animation-duration: 3600s;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transition: all;
+    border-radius: 40px;
+    
+    
+}
+
+@keyframes min1 {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+
+#hour{
+    height: 200px;
+    width: 11px;
+    background-color:black;
+    position: relative;
+    top:80px;
+    right: 11px;
+    animation-name: hour1;
+    animation-duration: 86400s;
+    animation-timing-function: linear;
+    transform-origin: bottom;
+    transition: all;
+    border-radius: 40px;
+    
+    
+}
+
+@keyframes hour1 {
+    from{
+        transform: rotate(0);
+    }
+
+    to{
+        transform: rotate(360deg);
+    }
+}
